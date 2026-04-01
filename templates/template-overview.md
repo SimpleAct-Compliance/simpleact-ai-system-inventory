@@ -16,3 +16,11 @@ Templates should support:
 - risk classification
 - documentation and evidence
 - monitoring and reporting
+
+## Included Templates
+
+- [ai-system-inventory-template.md](./ai-system-inventory-template.md)
+- [inventory-field-dictionary.md](./inventory-field-dictionary.md)
+- [example-ai-system-register.md](./example-ai-system-register.md)
+- [ownership-model.md](./ownership-model.md)
+- [review-workflow.md](./review-workflow.md)

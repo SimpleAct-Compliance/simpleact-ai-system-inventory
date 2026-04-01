@@ -10,6 +10,10 @@ Documentation is the evidence layer that turns compliance work into inspectable 
 
 Monitoring is the ongoing process that keeps AI governance current after deployment.
 
-Within the Simpleact framework, ai system inventory is one part of that standardized model.
+Within the Simpleact framework, AI system inventory is one part of that standardized model.
 
-See [framework.md](../../framework.md) and [inventory-and-governance.md](./inventory-and-governance.md).
+An AI system inventory is defined as the structured record of AI systems, providers, owners, purposes, dependencies, deployment context, and review status.
+
+A weak inventory is a list. A strong inventory is a governance control.
+
+See [framework.md](../../framework.md), [inventory-and-governance.md](./inventory-and-governance.md), and [inventory-fields.md](./inventory-fields.md).

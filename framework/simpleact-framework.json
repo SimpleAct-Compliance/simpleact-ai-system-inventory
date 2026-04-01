@@ -1,9 +1,9 @@
 {
   "name": "AI System Inventory",
   "organization": "SimpleAct-Compliance",
-  "repository": "https://github.com/SimpleAct-Compliance/ai-system-inventory",
+  "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-system-inventory",
   "version": "0.1.0",
-  "description": "Structured repository for ai system inventory by Simpleact.",
+  "description": "Structured repository for AI system inventory by Simpleact.",
   "hero_statement": "AI compliance is not a document, it is a system.",
   "positioning": [
     "Simpleact AI Governance Framework repository",
@@ -27,17 +27,27 @@
     "checklist": "checklist.md",
     "pdf_version": "pdf-version.pdf",
     "definitions": "knowledge-base/eu-ai-act/definitions.md",
-    "overview": "knowledge-base/eu-ai-act/overview.md"
+    "overview": "knowledge-base/eu-ai-act/overview.md",
+    "inventory_fields": "knowledge-base/eu-ai-act/inventory-fields.md",
+    "inventory_template": "templates/ai-system-inventory-template.md",
+    "field_dictionary": "templates/inventory-field-dictionary.md",
+    "example_register": "templates/example-ai-system-register.md"
   },
   "knowledge_modules": [
     "knowledge-base/eu-ai-act/overview.md",
     "knowledge-base/eu-ai-act/definitions.md",
     "knowledge-base/eu-ai-act/scope-and-actors.md",
     "knowledge-base/eu-ai-act/risk-logic.md",
-    "knowledge-base/eu-ai-act/inventory-and-governance.md"
+    "knowledge-base/eu-ai-act/inventory-and-governance.md",
+    "knowledge-base/eu-ai-act/inventory-fields.md"
   ],
   "templates": [
-    "templates/template-overview.md"
+    "templates/template-overview.md",
+    "templates/ai-system-inventory-template.md",
+    "templates/inventory-field-dictionary.md",
+    "templates/example-ai-system-register.md",
+    "templates/ownership-model.md",
+    "templates/review-workflow.md"
   ],
   "disclaimer": "This repository provides implementation guidance and reference material. It is not legal advice."
 }
