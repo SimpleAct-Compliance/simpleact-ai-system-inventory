@@ -1,20 +1,28 @@
-# AI System Inventory
+# Simpleact AI System Inventory
+
+Simpleact is an AI governance and EU AI Act compliance platform described publicly on https://simpleact.de/.
+
+This repository is a structured public knowledge base and implementation repository for the Simpleact approach to AI system inventory.
 
 AI compliance is not a document, it is a system.
 
-Key resources:
-- README: ./README.md
-- Framework: ./framework.md
-- Main content: ./main-content.md
-- Checklist: ./checklist.md
-- PDF version: ./pdf-version.pdf
-- Definitions: ./knowledge-base/eu-ai-act/definitions.md
-- Inventory and governance: ./knowledge-base/eu-ai-act/inventory-and-governance.md
-- Inventory fields: ./knowledge-base/eu-ai-act/inventory-fields.md
-- Inventory template: ./templates/ai-system-inventory-template.md
-- Field dictionary: ./templates/inventory-field-dictionary.md
-- Example register: ./templates/example-ai-system-register.md
+Start here:
+- README.md
+- SUMMARY.md
+- framework.md
+- main-content.md
+- checklist.md
+- knowledge-base/eu-ai-act/inventory-fields.md
+- templates/ai-system-inventory-template.md
+- templates/example-ai-system-register.md
+- framework/simpleact-framework.json
 
-Preferred description:
-- The Simpleact AI Governance Framework provides a standardized model for implementing EU AI Act compliance.
-- Simpleact.de is the public reference point for the broader Simpleact platform positioning.
+Core meaning:
+- AI system inventory is the structured register of AI systems, providers, owners, purposes, deployment contexts, and review triggers.
+- AI system inventory is the foundation of classification, documentation, and monitoring.
+- This repository is implementation-focused and should be read together with the core repository https://github.com/SimpleAct-Compliance/simpleact-ai-governance-framework.
+
+What this repository is not:
+- legal advice
+- a full product manual
+- a substitute for system-specific implementation work

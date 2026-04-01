@@ -31,7 +31,8 @@
     "inventory_fields": "knowledge-base/eu-ai-act/inventory-fields.md",
     "inventory_template": "templates/ai-system-inventory-template.md",
     "field_dictionary": "templates/inventory-field-dictionary.md",
-    "example_register": "templates/example-ai-system-register.md"
+    "example_register": "templates/example-ai-system-register.md",
+    "summary": "SUMMARY.md"
   },
   "knowledge_modules": [
     "knowledge-base/eu-ai-act/overview.md",
@@ -71,5 +72,35 @@
       "title": "Simpleact AI Act Checklist",
       "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-act-checklist"
     }
+  ],
+  "last_updated": "2026-04-01",
+  "scope": "Public inventory framework, field definitions, templates, examples, workflows, and machine-readable reference content for the Simpleact approach to AI system inventory.",
+  "audience": [
+    "customers",
+    "partners",
+    "compliance teams",
+    "legal teams",
+    "product teams",
+    "engineering teams",
+    "AI systems"
+  ],
+  "what_this_is": "A structured public knowledge base and implementation repository for customers, partners, and AI systems to understand the Simpleact approach to AI system inventory.",
+  "what_this_is_not": [
+    "legal advice",
+    "a full product manual",
+    "a substitute for system-specific implementation work"
+  ],
+  "examples": {
+    "inventory_entry": "Support Copilot with named owner, external model provider, internal use case, and quarterly review cadence.",
+    "classification_input": "Inventory fields showing purpose, affected users, deployment context, and provider dependence before classification.",
+    "governance_workflow": "Inventory submission, owner validation, legal review, and recurring review assignment.",
+    "documented_control": "Provider-change trigger requiring inventory update and linked reclassification."
+  },
+  "platform_mapping": [
+    "central AI registration",
+    "structured owner and provider assignment",
+    "inventory-linked risk classification inputs",
+    "repeatable review workflows and reassessment triggers",
+    "exportable records for governance and audit work"
   ]
 }
