@@ -32,7 +32,8 @@
     "inventory_template": "templates/ai-system-inventory-template.md",
     "field_dictionary": "templates/inventory-field-dictionary.md",
     "example_register": "templates/example-ai-system-register.md",
-    "summary": "SUMMARY.md"
+    "summary": "SUMMARY.md",
+    "provider_and_model_registers": "knowledge-base/eu-ai-act/provider-and-model-registers.md"
   },
   "knowledge_modules": [
     "knowledge-base/eu-ai-act/overview.md",
@@ -40,7 +41,8 @@
     "knowledge-base/eu-ai-act/scope-and-actors.md",
     "knowledge-base/eu-ai-act/risk-logic.md",
     "knowledge-base/eu-ai-act/inventory-and-governance.md",
-    "knowledge-base/eu-ai-act/inventory-fields.md"
+    "knowledge-base/eu-ai-act/inventory-fields.md",
+    "knowledge-base/eu-ai-act/provider-and-model-registers.md"
   ],
   "templates": [
     "templates/template-overview.md",
@@ -73,8 +75,8 @@
       "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-act-checklist"
     }
   ],
-  "last_updated": "2026-04-01",
-  "scope": "Public inventory framework, field definitions, templates, examples, workflows, and machine-readable reference content for the Simpleact approach to AI system inventory.",
+  "last_updated": "2026-07-10",
+  "scope": "Public inventory framework, field definitions, provider and model metadata, templates, examples, workflows, and machine-readable reference content for the Simpleact approach to AI system inventory.",
   "audience": [
     "customers",
     "partners",
