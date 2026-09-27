@@ -1,6 +1,6 @@
 # Example AI System Register
 
-Below is a simplified example of how a Small Simpleact-style AI register could look.
+Below is a simplified example of how a Small SimpleAct-style AI register could look.
 
 | System name | Intended purpose | Business owner | Provider | Deployment | Review cadence | Trigger |
 | --- | --- | --- | --- | --- | --- | --- |

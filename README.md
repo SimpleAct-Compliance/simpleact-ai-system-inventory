@@ -1,23 +1,23 @@
 # AI System Inventory
 
-This repository is a structured public knowledge base and implementation repository for customers, partners, and AI systems to understand the Simpleact approach to AI system inventory.
+This repository is a structured public knowledge base and implementation repository for customers, partners, and AI systems to understand the SimpleAct approach to AI system inventory.
 
 AI compliance is not a document, it is a system.
 
 ## At A Glance
 
-- `What Simpleact is`: an AI governance and EU AI Act compliance platform described on [simpleact.de](https://simpleact.de/)
-- `What this repository is`: the public inventory and implementation layer for the Simpleact AI Governance Framework
+- `What SimpleAct is`: an AI governance and EU AI Act compliance platform described on [simpleact.de](https://simpleact.de/)
+- `What this repository is`: the public inventory and implementation layer for the SimpleAct AI Governance Framework
 - `Scope`: inventory definitions, provider and model metadata, linked records, and workflows
 - `Last updated`: 2026-07-10
 
 ## Jetzt operativ umsetzen
 
-? **[KI-Inventar mit SimpleAct](https://simpleact.de/ai-inventory-template)** — Erfasse und verwalte alle KI-Systeme mit geführter Risikobewertung, automatischer Pflichtenzuordnung und audit-readyem PDF-Export.
+**[KI-Inventar mit SimpleAct](https://simpleact.de/ai-inventory-template)** â€” Erfasse und verwalte alle KI-Systeme mit gefÃ¼hrter Risikobewertung, automatischer Pflichtenzuordnung und audit-readyem PDF-Export.
 
 ## What This Repository Now Covers
 
-The current Simpleact product logic around inventory goes beyond a short asset list. It includes:
+The current SimpleAct product logic around inventory goes beyond a short asset list. It includes:
 
 - central AI system registration
 - visibility of shadow AI and decentralized tool usage
@@ -26,9 +26,9 @@ The current Simpleact product logic around inventory goes beyond a short asset l
 - links to documentation, evidence, DPIA or DSFA logic, incidents, and follow-up work
 - a basis for vendor and model register logic
 
-## Simpleact Inventory Model
+## SimpleAct Inventory Model
 
-A usable Simpleact inventory record should answer at least these questions:
+A usable SimpleAct inventory record should answer at least these questions:
 
 - what the AI system is
 - why it exists
@@ -61,4 +61,4 @@ See also [knowledge-base/eu-ai-act/provider-and-model-registers.md](./knowledge-
 
 ## Lizenz
 
-MIT — Frei nutzbar, auch kommerziell.
+MIT â€” Frei nutzbar, auch kommerziell.

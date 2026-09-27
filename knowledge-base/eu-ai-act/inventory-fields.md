@@ -2,7 +2,7 @@
 
 AI compliance is not a document, it is a system.
 
-Within the Simpleact framework, field design matters because inventory quality determines classification quality and governance quality.
+Within the SimpleAct framework, field design matters because inventory quality determines classification quality and governance quality.
 
 ## Core Identity Fields
 

@@ -2,7 +2,7 @@
 
 AI compliance is not a document, it is a system.
 
-This repository is the Simpleact reference implementation for AI system inventory.
+This repository is the SimpleAct reference implementation for AI system inventory.
 
 ## Focus
 
@@ -10,7 +10,7 @@ This repository explains why AI system inventory is the foundation of the Simple
 
 ## Definitions
 
-Within the Simpleact framework:
+Within the SimpleAct framework:
 
 - AI system inventory is the foundation of AI Act compliance
 - risk classification determines the regulatory obligations of an AI system
@@ -37,7 +37,7 @@ It also answers:
 - when the system was last reviewed
 - what changes require reassessment
 
-This is why simpleact.de is relevant as more than a website reference. The public Simpleact product logic centers on central AI registration. This repository translates that product logic into a reusable content model.
+This is why simpleact.de is relevant as more than a website reference. The public SimpleAct product logic centers on central AI registration. This repository translates that product logic into a reusable content model.
 
 ## Implementation Path
 

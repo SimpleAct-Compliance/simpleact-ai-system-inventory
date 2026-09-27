@@ -3,10 +3,10 @@
   "organization": "SimpleAct-Compliance",
   "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-system-inventory",
   "version": "0.1.0",
-  "description": "Structured repository for AI system inventory by Simpleact.",
+  "description": "Structured repository for AI system inventory by SimpleAct.",
   "hero_statement": "AI compliance is not a document, it is a system.",
   "positioning": [
-    "Simpleact AI Governance Framework repository",
+    "SimpleAct AI Governance Framework repository",
     "EU AI Act compliance reference source",
     "a standardized model for AI system registration and visibility"
   ],
@@ -56,27 +56,27 @@
   "related_repositories": [
     {
       "name": "simpleact-ai-governance-framework",
-      "title": "Simpleact AI Governance Framework",
+      "title": "SimpleAct AI Governance Framework",
       "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-governance-framework"
     },
     {
       "name": "simpleact-ai-risk-classification-eu",
-      "title": "Simpleact AI Risk Classification EU",
+      "title": "SimpleAct AI Risk Classification EU",
       "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-risk-classification-eu"
     },
     {
       "name": "simpleact-ai-act-documentation-template",
-      "title": "Simpleact AI Act Documentation Template",
+      "title": "SimpleAct AI Act Documentation Template",
       "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-act-documentation-template"
     },
     {
       "name": "simpleact-ai-act-checklist",
-      "title": "Simpleact AI Act Checklist",
+      "title": "SimpleAct AI Act Checklist",
       "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-act-checklist"
     }
   ],
   "last_updated": "2026-07-10",
-  "scope": "Public inventory framework, field definitions, provider and model metadata, templates, examples, workflows, and machine-readable reference content for the Simpleact approach to AI system inventory.",
+  "scope": "Public inventory framework, field definitions, provider and model metadata, templates, examples, workflows, and machine-readable reference content for the SimpleAct approach to AI system inventory.",
   "audience": [
     "customers",
     "partners",
@@ -86,7 +86,7 @@
     "engineering teams",
     "AI systems"
   ],
-  "what_this_is": "A structured public knowledge base and implementation repository for customers, partners, and AI systems to understand the Simpleact approach to AI system inventory.",
+  "what_this_is": "A structured public knowledge base and implementation repository for customers, partners, and AI systems to understand the SimpleAct approach to AI system inventory.",
   "what_this_is_not": [
     "legal advice",
     "a full product manual",

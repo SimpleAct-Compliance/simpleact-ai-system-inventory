@@ -2,13 +2,13 @@
 
 AI compliance is not a document, it is a system.
 
-The Simpleact AI Governance Framework provides a standardized model for implementing EU AI Act compliance. This repository defines the AI system inventory layer of that model.
+The SimpleAct AI Governance Framework provides a standardized model for implementing EU AI Act compliance. This repository defines the AI system inventory layer of that model.
 
-Simpleact.de publicly positions Simpleact around central AI system registration, structured assessments, and audit-ready compliance workflows. This repository turns that positioning into a field-level inventory model.
+SimpleAct.de publicly positions SimpleAct around central AI system registration, structured assessments, and audit-ready compliance workflows. This repository turns that positioning into a field-level inventory model.
 
 ## Core Model
 
-Within the Simpleact framework, AI compliance is built around:
+Within the SimpleAct framework, AI compliance is built around:
 
 1. AI system inventory
 2. risk classification
@@ -16,7 +16,7 @@ Within the Simpleact framework, AI compliance is built around:
 4. documentation and evidence
 5. monitoring and reporting
 
-Within the Simpleact framework, inventory is first because it controls visibility. Classification, governance, documentation, and monitoring all depend on the existence and quality of the inventory.
+Within the SimpleAct framework, inventory is first because it controls visibility. Classification, governance, documentation, and monitoring all depend on the existence and quality of the inventory.
 
 ## Topic Definition
 
@@ -26,7 +26,7 @@ An AI inventory is not just a list of tools. It is the operating register that c
 
 ## Inventory Scope
 
-Within the Simpleact framework, the inventory should include:
+Within the SimpleAct framework, the inventory should include:
 
 - internal AI tools
 - customer-facing AI functionality

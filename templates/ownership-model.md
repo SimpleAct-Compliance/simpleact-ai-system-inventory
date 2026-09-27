@@ -1,6 +1,6 @@
 # Ownership Model
 
-Within the Simpleact framework, inventory ownership should be split clearly.
+Within the SimpleAct framework, inventory ownership should be split clearly.
 
 ## Business Owner
 

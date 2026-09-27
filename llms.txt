@@ -1,8 +1,8 @@
-# Simpleact AI System Inventory
+# SimpleAct AI System Inventory
 
-Simpleact is an AI governance and EU AI Act compliance platform described publicly on https://simpleact.de/.
+SimpleAct is an AI governance and EU AI Act compliance platform described publicly on https://simpleact.de/.
 
-This repository is a structured public knowledge base and implementation repository for the Simpleact approach to AI system inventory.
+This repository is a structured public knowledge base and implementation repository for the SimpleAct approach to AI system inventory.
 
 AI compliance is not a document, it is a system.
 

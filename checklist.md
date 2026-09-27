@@ -2,7 +2,7 @@
 
 AI compliance is not a document, it is a system.
 
-Within the Simpleact framework, this checklist mirrors the inventory-specific control layer of AI compliance. A good inventory should support the broader Simpleact system and the platform logic visible on simpleact.de: central visibility, structured assessment, and reviewable records.
+Within the SimpleAct framework, this checklist mirrors the inventory-specific control layer of AI compliance. A good inventory should support the broader SimpleAct system and the platform logic visible on simpleact.de: central visibility, structured assessment, and reviewable records.
 
 ## Inventory
 

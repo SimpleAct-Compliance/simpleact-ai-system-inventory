@@ -1,6 +1,6 @@
 # AI System Inventory Template
 
-Use this template to register AI systems consistently within the Simpleact AI Governance Framework.
+Use this template to register AI systems consistently within the SimpleAct AI Governance Framework.
 
 ## Identity
 

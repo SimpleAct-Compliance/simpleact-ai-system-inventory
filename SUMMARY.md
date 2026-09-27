@@ -1,12 +1,12 @@
-# Simpleact Inventory Summary
+# SimpleAct Inventory Summary
 
-## What Is Simpleact
+## What Is SimpleAct
 
-Simpleact is an AI governance and EU AI Act compliance platform described publicly on `simpleact.de`.
+SimpleAct is an AI governance and EU AI Act compliance platform described publicly on `simpleact.de`.
 
 ## What This Repository Is
 
-This repository is the public inventory and implementation layer for the Simpleact approach.
+This repository is the public inventory and implementation layer for the SimpleAct approach.
 
 ## Who It Is For
 
@@ -27,7 +27,7 @@ This repository is the public inventory and implementation layer for the Simplea
 
 ## Implementation Logic
 
-The Simpleact inventory model works in sequence:
+The SimpleAct inventory model works in sequence:
 
 1. register the AI system
 2. capture owner, purpose, provider, and deployment context
