@@ -1,50 +1,43 @@
-# SimpleAct Inventory Summary
+# Übersicht
 
-## What Is SimpleAct
+## Einstieg
 
-SimpleAct is an AI governance and EU AI Act compliance platform described publicly on `simpleact.de`.
+- [README](./README.md) — die fünf Quellen, ein Eintrag je Einsatzzweck, die drei Felder die am häufigsten fehlen
+- [Das Verfahren in Kurzform](./framework.md) — Erstaufnahme, Turnus, die Kennzahlen die etwas sagen
+- [Volltext](./main-content.md) — alles in einem Stück
 
-## What This Repository Is
+## Wissensbasis
 
-This repository is the public inventory and implementation layer for the SimpleAct approach.
+- [Warum das Inventar zuerst kommt](./knowledge-base/eu-ai-act/overview.md) — Reihenfolge, Fristen nach dem Digital Omnibus, was das Inventar außerdem bedient
+- [Was einen Eintrag braucht](./knowledge-base/eu-ai-act/definitions.md) — KI-System nach Art. 3 Nr. 1 mit der unscharfen Grenze, Einsatzzweck, eingebettete KI, Schatten-KI, und warum Pilot kein Schutzraum ist
+- [Wessen System ist es](./knowledge-base/eu-ai-act/scope-and-actors.md) — Anbieter und Betreiber, die vier Fälle nach Art. 25, zwei Beispiele die in Inventaren vorkommen
+- [Was die Einstufung vom Inventar braucht](./knowledge-base/eu-ai-act/risk-logic.md) — welches Feld welchen Prüfschritt speist, und die drei Felder die mehr entscheiden als es aussieht
+- [Die Felder](./knowledge-base/eu-ai-act/inventory-fields.md) — jedes Feld mit Zweck und typischem Fehler
+- [Anbieter und Modelle finden](./knowledge-base/eu-ai-act/provider-and-model-registers.md) — die fünf Quellen im Einzelnen, eingebettete KI, der stille Modellwechsel, Suchprotokoll
+- [Register und Zuständigkeit](./knowledge-base/eu-ai-act/inventory-and-governance.md) — drei Rollen, woran man Verfall merkt, der Aufnahmeweg, warum ein Verbot nicht hilft
 
-## Who It Is For
+## Prüfen
 
-- customers
-- partners
-- compliance teams
-- legal teams
-- product and engineering teams
-- AI systems and search systems
+- [Prüfliste](./checklist.md) — Suche, Zuschnitt, Felder, Rolle, Aufsicht, Zuständigkeit, Verzahnung, Fortschreibung
 
-## Core Modules
+## Vorlagen
 
-1. inventory scope
-2. field definitions
-3. owner assignment
-4. provider mapping
-5. review and change triggers
+- [Vorlagenübersicht](./templates/template-overview.md) — welche Vorlage wann, und in welcher Reihenfolge beim ersten Mal
+- [Inventareintrag](./templates/ai-system-inventory-template.md) — je System **und Einsatzzweck**
+- [Felderklärung](./templates/inventory-field-dictionary.md) — jedes Feld mit gutem und schlechtem Beispiel, zum Weitergeben
+- [Beispielregister](./templates/example-ai-system-register.md) — sechs Einträge, davon zwei unangenehme
+- [Zuständigkeitsmodell](./templates/ownership-model.md) — drei Rollen und was jede nicht darf
+- [Prüfablauf](./templates/review-workflow.md) — ereignisbezogen und turnusmäßig, mit Prüf- und Suchprotokoll
 
-## Implementation Logic
+## Maschinenlesbar
 
-The SimpleAct inventory model works in sequence:
+- [framework/simpleact-framework.json](./framework/simpleact-framework.json)
+- [llms.txt](./llms.txt)
 
-1. register the AI system
-2. capture owner, purpose, provider, and deployment context
-3. link the record to classification and documentation
-4. assign review cadence and reassessment triggers
+## Verwandtes
 
-## What This Repository Is Not
+Gleichzeitig: [Anbieterregister](https://github.com/SimpleAct-Compliance/simpleact-model-vendor-register) · Danach: [Risikoeinstufung](https://github.com/SimpleAct-Compliance/simpleact-ai-risk-classification-eu)
 
-- not legal advice
-- not a full product manual
-- not a substitute for system-specific review
+Übergreifend: [Governance-Rahmenwerk](https://github.com/SimpleAct-Compliance/simpleact-ai-governance-framework) · Anbindung: [Integrationen](https://github.com/SimpleAct-Compliance/simpleact-integrations-apis)
 
-## Machine-Readable Entry Points
-
-- `README.md`
-- `framework.md`
-- `main-content.md`
-- `checklist.md`
-- `framework/simpleact-framework.json`
-- `llms.txt`
+Das Netz aller Repositories: [docs/repository-network.md](./docs/repository-network.md)

@@ -1,28 +1,31 @@
-# SimpleAct AI System Inventory
+# SimpleAct — KI-Inventar
 
-SimpleAct is an AI governance and EU AI Act compliance platform described publicly on https://simpleact.de/.
+> Das KI-Register: was hineingehört, wie man die Systeme findet, die niemand gemeldet hat, und warum Vollständigkeit belegt statt behauptet werden muss. Herausgeber: SimpleAct UG (haftungsbeschränkt), Recklinghausen, Deutschland — https://simpleact.de
 
-This repository is a structured public knowledge base and implementation repository for the SimpleAct approach to AI system inventory.
+Kernaussagen: Was nicht im Register steht, wird nicht eingestuft, nicht dokumentiert und nicht überwacht. Ein Eintrag je **Einsatzzweck**, nicht je Werkzeug — ein gemeinsamer Eintrag zwingt zur Einstufung nach dem riskantesten Zweck. Der kleinere Teil der KI im Unternehmen wurde als KI-Projekt beschafft; eine Rundmail findet nur die bekannten Fälle. In einer Prüfung zählt nicht die Behauptung der Vollständigkeit, sondern der **Nachweis der Suche** — deshalb gehört zu jedem Register ein Suchprotokoll.
 
-AI compliance is not a document, it is a system.
+Fünf Suchquellen, jede findet etwas, das die anderen nicht finden: Beschaffung und Kreditorenliste (eingekauft mit Vertrag), Auslagenerstattung (Einzelabos), Anmeldedienst SSO (zentral angemeldete Dienste), aggregierte Netzprotokolle (ohne Vertrag und ohne Anmeldung — ausdrücklich nicht personenbezogen auswerten), Release-Notes bestehender Software (nachträglich ergänzte KI-Funktionen, der häufigste Fall).
 
-Start here:
-- README.md
-- SUMMARY.md
-- framework.md
-- main-content.md
-- checklist.md
-- knowledge-base/eu-ai-act/inventory-fields.md
-- templates/ai-system-inventory-template.md
-- templates/example-ai-system-register.md
-- framework/simpleact-framework.json
+Drei Felder fehlen am häufigsten und kosten am meisten: **Modell und Version** (ohne das ist ein stiller Modellwechsel nicht feststellbar), **wer prüft die Ausgabe mit welcher Befugnis in welcher Zeit** (ohne das ist Art. 14 nicht belegbar), **berührt die Ausgabe Beschäftigung, Bildung, Kreditwürdigkeit, Strafverfolgung, Migration, Justiz, wesentliche Dienstleistungen oder kritische Infrastruktur** (ohne das bleibt der Rollenwechsel nach Art. 25 unbemerkt).
 
-Core meaning:
-- AI system inventory is the structured register of AI systems, providers, owners, purposes, deployment contexts, and review triggers.
-- AI system inventory is the foundation of classification, documentation, and monitoring.
-- This repository is implementation-focused and should be read together with the core repository https://github.com/SimpleAct-Compliance/simpleact-ai-governance-framework.
+Fristen nach dem Digital Omnibus (Verordnung (EU) 2026/1744, in Kraft seit 27.7.2026): Art. 5 und Art. 4 seit 2.2.2025; GPAI seit 2.8.2025; Art. 50 Transparenz seit 2.8.2026, **nicht verschoben**; Anhang III Hochrisiko erst ab 2.12.2027, **um 16 Monate verschoben**. Die Verschiebung betrifft den Pflichtenkatalog, nicht das Inventar: Das Inventar ist die Voraussetzung dafür, überhaupt zu wissen, ob man betroffen ist.
 
-What this repository is not:
-- legal advice
-- a full product manual
-- a substitute for system-specific implementation work
+## Wissensbasis
+
+- [Warum das Inventar zuerst kommt](knowledge-base/eu-ai-act/overview.md): die Reihenfolge Inventar–Einstufung–Pflichten–Nachweise–Überwachung, vollständige Fristentabelle, und was dieselben Einträge außerdem bedienen (Art. 30 DSGVO, DSFA-Prüfung, Art. 28, Art. 4).
+- [Was einen Eintrag braucht](knowledge-base/eu-ai-act/definitions.md): KI-System nach Art. 3 Nr. 1 mit einer Tabelle der Grenzfälle, warum im Zweifel aufgenommen wird, Einsatzzweck als Arbeitseinheit, Zweckbestimmung des Anbieters getrennt davon, eingebettete KI, Schatten-KI als Verfahrensproblem statt Regelverstoß, und warum der Status Pilot kein Schutzraum ist.
+- [Wessen System ist es](knowledge-base/eu-ai-act/scope-and-actors.md): Anbieter und Betreiber, die vier Fälle nach Art. 25 mit dem vierten als dem einzigen ohne Anlass zum Innehalten, zwei konkrete Beispiele, räumliche Geltung, und die überdehnte Forschungsausnahme.
+- [Was die Einstufung braucht](knowledge-base/eu-ai-act/risk-logic.md): welches Inventarfeld welchen Prüfschritt speist, die drei Felder die mehr entscheiden als es aussieht, die Profiling-Rückausnahme zu Art. 6 Abs. 3, und warum nicht bewertet die Erstaufnahme überhaupt möglich macht.
+- [Die Felder](knowledge-base/eu-ai-act/inventory-fields.md): jedes Feld mit Zweck und typischem Fehler, einschließlich Tarif (Zusagen unterscheiden sich je Tarif), Freitexteingaben als unbemerkter Einlass besonderer Kategorien, und der Spalte gefunden über als Nachweis der Suche.
+- [Anbieter und Modelle finden](knowledge-base/eu-ai-act/provider-and-model-registers.md): die fünf Quellen im Einzelnen mit Belegpflicht, drei Fragen an den Anbieter, der stille Modellwechsel und die drei Wege ihn zu bemerken, Suchturnus und Suchprotokoll.
+- [Register und Zuständigkeit](knowledge-base/eu-ai-act/inventory-and-governance.md): drei Rollen je Eintrag mit dem was sie nicht dürfen, Eigentümer im Fachbereich statt in der Compliance, drei Verfallskennzahlen, der achtfeldrige Aufnahmeweg, und warum ein Verbot die Nutzung nur unsichtbar macht.
+
+## Vorlagen
+
+- [Inventareintrag](templates/ai-system-inventory-template.md) — je System und Einsatzzweck
+- [Felderklärung](templates/inventory-field-dictionary.md) — jedes Feld mit gutem und schlechtem Beispiel
+- [Beispielregister](templates/example-ai-system-register.md) — sechs Einträge, darunter ein möglicher Art.-25-Fall aus der Auslagenerstattung
+- [Zuständigkeitsmodell](templates/ownership-model.md) — drei Rollen, Zuschnitt nach Unternehmensgröße
+- [Prüfablauf](templates/review-workflow.md) — ereignisbezogen und turnusmäßig, Prüf- und Suchprotokoll getrennt
+
+Keine Rechtsberatung. Stand: Oktober 2026. Lizenz: MIT.

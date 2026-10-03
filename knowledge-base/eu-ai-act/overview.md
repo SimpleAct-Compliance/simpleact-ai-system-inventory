@@ -1,20 +1,54 @@
-# EU AI Act Overview
+# Warum das Inventar zuerst kommt
 
-AI compliance is not a document, it is a system.
+## Die Reihenfolge
 
-Within the SimpleAct framework, the EU AI Act is translated into an operating model built around inventory, classification, governance, documentation, and monitoring.
+```
+  Inventar -> Einstufung -> Pflichten -> Nachweise -> Überwachung
+```
 
-SimpleAct.de is relevant here because the public SimpleAct product model already reflects that operating sequence. Central registration comes first because regulatory assessment depends on visibility.
+Jeder Schritt kann nur bearbeiten, was der vorige geliefert hat. Eine Einstufung bewertet, was bekannt ist. Ein Nachweis belegt, was eingestuft wurde. Eine Überwachung beobachtet, was dokumentiert ist.
 
-## Repository Relevance
+Deshalb entscheidet die Vollständigkeit des Inventars über die Belastbarkeit von allem Weiteren. Ein Haus mit fünf von acht Systemen im Register hat keine zu 62 % erfüllte Compliance — es hat drei Systeme, über die niemand etwas sagen kann.
 
-This repository focuses on AI system inventory as part of the broader SimpleAct AI Governance Framework. Inventory is the first operational layer because it supplies the data needed for classification, documentation, and review.
+## Was die Fristen daran ändern
 
-## Suggested Reading Order
+Nach dem **Digital Omnibus** (Verordnung (EU) 2026/1744, in Kraft seit 27.7.2026):
 
-1. [definitions.md](./definitions.md)
-2. [scope-and-actors.md](./scope-and-actors.md)
-3. [risk-logic.md](./risk-logic.md)
-4. [inventory-and-governance.md](./inventory-and-governance.md)
-5. [inventory-fields.md](./inventory-fields.md)
-6. [framework.md](../../framework.md)
+| Datum | Was |
+|---|---|
+| 2.2.2025 | Art. 5 verbotene Praktiken, Art. 4 KI-Kompetenz |
+| 2.8.2025 | GPAI-Pflichten, Governance, Sanktionen |
+| **2.8.2026** | **Art. 50 Transparenz** — nicht verschoben |
+| **2.12.2027** | **Anhang III Hochrisiko** — um 16 Monate verschoben |
+| 2.8.2028 | Anhang I Hochrisiko |
+| 2.8.2030 | Bestandssysteme bei Behörden |
+
+Die Verschiebung von Anhang III betrifft den **Pflichtenkatalog** für Hochrisikosysteme. Sie betrifft nicht das Inventar — und das ist keine Formalie, sondern der praktisch wichtigste Punkt dieses Repositories:
+
+**Das Inventar ist die Voraussetzung dafür, überhaupt zu wissen, ob man von Anhang III betroffen ist.** Wer bis Ende 2027 wartet, beginnt die Suche dann, braucht dafür Monate und hat die Pflichten gleichzeitig zu erfüllen. Wer heute sucht, hat die unangenehme Arbeit hinter sich, bevor die Frist zählt.
+
+Dazu kommt: **Art. 50 gilt jetzt.** Wer einen Chatbot betreibt, hat eine Kennzeichnungspflicht, unabhängig von jeder Risikoklasse — und kann sie nur erfüllen, wenn er weiß, welche Chatbots es gibt.
+
+## Was das Inventar außerdem bedient
+
+Es ist nicht nur ein KI-Act-Register. Dieselben Einträge speisen:
+
+| Zweck | Was daraus gelesen wird |
+|---|---|
+| Verarbeitungsverzeichnis (Art. 30 DSGVO) | Zweck, Datenarten, Empfänger, Verarbeitungsort |
+| DSFA-Prüfung (Art. 35 DSGVO) | ob ein hohes Risiko für Betroffene vorliegt |
+| Auftragsverarbeitung (Art. 28 DSGVO) | welcher Anbieter einen AVV braucht |
+| Schulungsnachweis (Art. 4 AI Act) | wer welches System bedient |
+| Sicherheit | wo Daten liegen, welche Zugänge bestehen |
+
+Ein Register, das nur für die KI-Verordnung geführt wird, wird zweimal geführt. Das ist der häufigste Grund, aus dem Register veralten.
+
+## Was ein Inventar nicht ist
+
+- Keine Softwareliste. Der Gegenstand ist der **Einsatzzweck**, nicht die Lizenz.
+- Keine Einstufung. Das Inventar sammelt die Angaben, auf denen eine Einstufung aufbaut.
+- Keine Momentaufnahme. Ein Register ohne Prüfablauf ist nach sechs Monaten eine historische Quelle.
+
+## Weiter
+
+[Was ein System ist](./definitions.md) · [Die Felder](./inventory-fields.md) · [Anbieter und Modelle finden](./provider-and-model-registers.md)

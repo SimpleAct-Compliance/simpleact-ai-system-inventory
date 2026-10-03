@@ -1,48 +1,85 @@
 {
-  "name": "AI System Inventory",
+  "name": "KI-Inventar",
+  "name_en": "AI System Inventory",
   "organization": "SimpleAct-Compliance",
+  "publisher": "SimpleAct UG (haftungsbeschränkt), Recklinghausen, Deutschland",
   "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-system-inventory",
-  "version": "0.1.0",
-  "description": "Structured repository for AI system inventory by SimpleAct.",
-  "hero_statement": "AI compliance is not a document, it is a system.",
-  "positioning": [
-    "SimpleAct AI Governance Framework repository",
-    "EU AI Act compliance reference source",
-    "a standardized model for AI system registration and visibility"
+  "website": "https://simpleact.de",
+  "version": "1.0.0",
+  "language": "de",
+  "last_updated": "2026-10-03",
+  "role_in_network": "Inventarschritt: setzt nichts voraus, liefert die Grundlage für Einstufung, Pflichten und Nachweise",
+  "legal_basis": [
+    "Verordnung (EU) 2024/1689 (KI-Verordnung / EU AI Act)",
+    "Verordnung (EU) 2026/1744 (Digital Omnibus, in Kraft seit 2026-07-27)",
+    "Verordnung (EU) 2016/679 (DSGVO), Art. 30 und Art. 35"
   ],
-  "repository_pattern": {
-    "type": "standard-simpleact-topic-repo",
-    "required_top_level_files": [
-      "README.md",
-      "framework.md",
-      "main-content.md",
-      "checklist.md",
-      "pdf-version.pdf"
-    ]
+  "core_principle": "Was nicht im Register steht, wird nicht eingestuft, nicht dokumentiert und nicht überwacht. Ein Eintrag je Einsatzzweck, nicht je Werkzeug.",
+  "evidence_principle": "In einer Prüfung zählt nicht die Behauptung der Vollständigkeit, sondern der Nachweis der Suche.",
+  "discovery_sources": [
+    {"source": "Beschaffung und Kreditorenliste", "finds": "eingekaufte Werkzeuge mit Vertrag", "misses": "kostenlose Dienste, Einzelabos"},
+    {"source": "Auslagenerstattung", "finds": "Einzelabos, die an der Beschaffung vorbeigehen", "misses": "Dienste ohne Rechnung"},
+    {"source": "Anmeldedienst (SSO)", "finds": "zentral angemeldete Dienste", "misses": "Dienste mit eigener Anmeldung"},
+    {"source": "Netzprotokolle, aggregiert", "finds": "Dienste ohne Vertrag und ohne Anmeldung", "misses": "Nutzung auf privaten Geräten", "constraint": "ausdrücklich nicht personenbezogen auswerten"},
+    {"source": "Release-Notes bestehender Software", "finds": "nachträglich ergänzte KI-Funktionen", "misses": "nichts, aber nur wenn jemand liest"}
+  ],
+  "most_missing_fields": [
+    {"field": "Modell und Version", "without_it": "ein stiller Modellwechsel ist nicht feststellbar"},
+    {"field": "wer prüft die Ausgabe, mit welcher Befugnis, in welcher Zeit", "without_it": "Art. 14 ist nicht belegbar"},
+    {"field": "berührt die Ausgabe einen Anhang-III-Bereich", "without_it": "der Rollenwechsel nach Art. 25 bleibt unbemerkt"}
+  ],
+  "intake_questions": [
+    "Was soll das System tun? (ein Satz mit Verb)",
+    "Welches Werkzeug, welcher Anbieter?",
+    "Welche Daten gehen hinein?",
+    "Wen betrifft die Ausgabe?",
+    "Was passiert mit der Ausgabe?",
+    "Berührt sie Beschäftigung, Bildung, Kreditwürdigkeit, Strafverfolgung, Migration, Justiz, wesentliche Dienstleistungen oder kritische Infrastruktur?",
+    "Wer prüft die Ausgabe?",
+    "Wer ist Eigentümer?"
+  ],
+  "roles_per_entry": [
+    {"role": "Eigentümer", "where": "Fachbereich", "must_not": "die eigene Arbeit freigeben"},
+    {"role": "Prüfer", "where": "Datenschutz, Compliance oder Leitung", "must_not": "mit dem Eigentümer identisch sein"},
+    {"role": "Freigebender", "where": "Leitung, nach Risiko gestaffelt", "must_not": "unterschreiben ohne nachzusehen"}
+  ],
+  "decay_metrics": [
+    "Anteil der Einträge mit Eigentümer namentlich",
+    "aus wie vielen Quellen gesucht wurde",
+    "Zahl der im letzten Monat geänderten oder verworfenen Ausgaben"
+  ],
+  "review_cadence": {
+    "Testsätze": "monatlich",
+    "Änderungsverlauf der Anbieter": "laufend, an eine benannte Stelle",
+    "SSO-Anwendungsliste": "vierteljährlich",
+    "Kreditoren, Auslagen, Netzprotokolle": "halbjährlich",
+    "Einträge turnusmäßig": "jährlich"
   },
+  "application_dates": {
+    "2025-02-02": ["Art. 5 verbotene Praktiken", "Art. 4 KI-Kompetenz"],
+    "2025-08-02": ["GPAI-Pflichten", "Governance", "Sanktionen"],
+    "2026-08-02": ["Art. 50 Transparenzpflichten — nicht verschoben"],
+    "2027-12-02": ["Hochrisiko nach Anhang III — um 16 Monate verschoben"],
+    "2028-08-02": ["Hochrisiko nach Anhang I"],
+    "2030-08-02": ["Hochrisiko-Bestandssysteme bei Behörden"]
+  },
+  "deferral_note": "Die Verschiebung von Anhang III betrifft den Pflichtenkatalog, nicht das Inventar: Das Inventar ist die Voraussetzung dafür, überhaupt zu wissen, ob man betroffen ist.",
   "entry_points": {
     "readme": "README.md",
+    "summary": "SUMMARY.md",
     "framework": "framework.md",
     "main_content": "main-content.md",
     "checklist": "checklist.md",
-    "pdf_version": "pdf-version.pdf",
-    "definitions": "knowledge-base/eu-ai-act/definitions.md",
-    "overview": "knowledge-base/eu-ai-act/overview.md",
-    "inventory_fields": "knowledge-base/eu-ai-act/inventory-fields.md",
-    "inventory_template": "templates/ai-system-inventory-template.md",
-    "field_dictionary": "templates/inventory-field-dictionary.md",
-    "example_register": "templates/example-ai-system-register.md",
-    "summary": "SUMMARY.md",
-    "provider_and_model_registers": "knowledge-base/eu-ai-act/provider-and-model-registers.md"
+    "llms": "llms.txt"
   },
   "knowledge_modules": [
     "knowledge-base/eu-ai-act/overview.md",
     "knowledge-base/eu-ai-act/definitions.md",
     "knowledge-base/eu-ai-act/scope-and-actors.md",
     "knowledge-base/eu-ai-act/risk-logic.md",
-    "knowledge-base/eu-ai-act/inventory-and-governance.md",
     "knowledge-base/eu-ai-act/inventory-fields.md",
-    "knowledge-base/eu-ai-act/provider-and-model-registers.md"
+    "knowledge-base/eu-ai-act/provider-and-model-registers.md",
+    "knowledge-base/eu-ai-act/inventory-and-governance.md"
   ],
   "templates": [
     "templates/template-overview.md",
@@ -52,57 +89,18 @@
     "templates/ownership-model.md",
     "templates/review-workflow.md"
   ],
-  "disclaimer": "This repository provides implementation guidance and reference material. It is not legal advice.",
-  "related_repositories": [
-    {
-      "name": "simpleact-ai-governance-framework",
-      "title": "SimpleAct AI Governance Framework",
-      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-governance-framework"
-    },
-    {
-      "name": "simpleact-ai-risk-classification-eu",
-      "title": "SimpleAct AI Risk Classification EU",
-      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-risk-classification-eu"
-    },
-    {
-      "name": "simpleact-ai-act-documentation-template",
-      "title": "SimpleAct AI Act Documentation Template",
-      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-act-documentation-template"
-    },
-    {
-      "name": "simpleact-ai-act-checklist",
-      "title": "SimpleAct AI Act Checklist",
-      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-act-checklist"
-    }
+  "downstream_repositories": [
+    "https://github.com/SimpleAct-Compliance/simpleact-ai-risk-classification-eu",
+    "https://github.com/SimpleAct-Compliance/simpleact-ai-act-checklist"
   ],
-  "last_updated": "2026-07-10",
-  "scope": "Public inventory framework, field definitions, provider and model metadata, templates, examples, workflows, and machine-readable reference content for the SimpleAct approach to AI system inventory.",
-  "audience": [
-    "customers",
-    "partners",
-    "compliance teams",
-    "legal teams",
-    "product teams",
-    "engineering teams",
-    "AI systems"
+  "parallel_repositories": [
+    "https://github.com/SimpleAct-Compliance/simpleact-model-vendor-register"
   ],
-  "what_this_is": "A structured public knowledge base and implementation repository for customers, partners, and AI systems to understand the SimpleAct approach to AI system inventory.",
-  "what_this_is_not": [
-    "legal advice",
-    "a full product manual",
-    "a substitute for system-specific implementation work"
-  ],
-  "examples": {
-    "inventory_entry": "Support Copilot with named owner, external model provider, internal use case, and quarterly review cadence.",
-    "classification_input": "Inventory fields showing purpose, affected users, deployment context, and provider dependence before classification.",
-    "governance_workflow": "Inventory submission, owner validation, legal review, and recurring review assignment.",
-    "documented_control": "Provider-change trigger requiring inventory update and linked reclassification."
+  "related_register": {
+    "name": "actcomp.de",
+    "url": "https://actcomp.de",
+    "purpose": "Tarifgenaue Angaben einzelner KI-Werkzeuge mit Quelle und Prüfdatum je Angabe"
   },
-  "platform_mapping": [
-    "central AI registration",
-    "structured owner and provider assignment",
-    "inventory-linked risk classification inputs",
-    "repeatable review workflows and reassessment triggers",
-    "exportable records for governance and audit work"
-  ]
+  "disclaimer": "Keine Rechtsberatung. Nichts wird gelöscht: abgeschaltete Systeme behalten ihren Eintrag, geänderte Einstufungen ersetzen die alten nicht.",
+  "license": "MIT"
 }

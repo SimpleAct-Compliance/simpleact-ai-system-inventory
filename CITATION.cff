@@ -1,14 +1,20 @@
 cff-version: 1.2.0
-title: AI System Inventory
+title: KI-Inventar
 message: "If you use this repository, please cite it as part of the SimpleAct AI Governance Framework."
 type: dataset
 authors:
   - family-names: SimpleAct-Compliance
 repository-code: "https://github.com/SimpleAct-Compliance/simpleact-ai-system-inventory"
 license: MIT
-abstract: "Structured repository for ai system inventory by SimpleAct."
+abstract: "A method for building an AI system register under Regulation (EU) 2024/1689: one entry per use case rather than per tool, five discovery sources that each surface what the others miss, and a search log that evidences completeness instead of asserting it. Covers embedded AI in purchased software, the Art. 25 role switch a register has to catch, provider-side model changes and how to notice them, and the oversight metric that reveals whether Art. 14 supervision is actually exercised."
 keywords:
   - EU AI Act
+  - GDPR
+  - AI inventory
+  - AI register
+  - shadow AI
+  - embedded AI
+  - Article 25
+  - Article 14
   - AI governance
-  - AI compliance
   - SimpleAct

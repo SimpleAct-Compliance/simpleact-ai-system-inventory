@@ -1,60 +1,57 @@
-# AI System Inventory
+# Das Verfahren in Kurzform
 
-AI compliance is not a document, it is a system.
+Ein Inventar ist fertig, wenn drei Fragen beantwortbar sind:
 
-The SimpleAct AI Governance Framework provides a standardized model for implementing EU AI Act compliance. This repository defines the AI system inventory layer of that model.
+1. **Welche KI-Systeme gibt es** — und woher wissen wir, dass die Liste vollständig ist?
+2. **Wer verantwortet jeden einzelnen** — mit Namen?
+3. **Woran merkt jemand, wenn sich etwas ändert?**
 
-SimpleAct.de publicly positions SimpleAct around central AI system registration, structured assessments, and audit-ready compliance workflows. This repository turns that positioning into a field-level inventory model.
+Frage 1 ist die schwierige. Die Antwort darauf ist nie „wir haben gefragt".
 
-## Core Model
+## Erstaufnahme
 
-Within the SimpleAct framework, AI compliance is built around:
+```
+  Suchen (5 Quellen) -> Aufnehmen (8 Felder) -> Ergänzen -> Zuweisen
+```
 
-1. AI system inventory
-2. risk classification
-3. governance and accountability
-4. documentation and evidence
-5. monitoring and reporting
+**Suchen.** Beschaffung und Kreditorenliste, Auslagenerstattung, Anmeldedienst, aggregierte Netzprotokolle, Release-Notes bestehender Software. Jede Quelle findet etwas, das die anderen nicht finden. Protokollieren, welche Quelle wann durchsucht wurde — das ist der Nachweis.
 
-Within the SimpleAct framework, inventory is first because it controls visibility. Classification, governance, documentation, and monitoring all depend on the existence and quality of the inventory.
+**Aufnehmen.** Acht Felder, die der Fachbereich ohne Nachfrage beantworten kann. Mehr nicht: Ein Formular mit vierzig Feldern wird umgangen.
 
-## Topic Definition
+**Ergänzen.** Modellversion, Unterauftragsverarbeiter, Vertragsgrundlage — von Leuten, die das beschaffen können.
 
-AI system inventory is the structured register of AI systems, providers, owners, purposes, dependencies, deployment status, and review-relevant metadata.
+**Zuweisen.** Je Eintrag ein Eigentümer im Fachbereich und ein Prüfer, der nicht derselbe ist.
 
-An AI inventory is not just a list of tools. It is the operating register that connects AI usage to risk classification, governance ownership, documentation requirements, and monitoring triggers.
+## Im Betrieb halten
 
-## Inventory Scope
+| Maßnahme | Turnus |
+|---|---|
+| Testsätze gegen den stillen Modellwechsel | monatlich |
+| Änderungsverlauf der Anbieter lesen | laufend, an eine benannte Stelle |
+| SSO-Anwendungsliste | vierteljährlich |
+| Kreditoren, Auslagen, Netzprotokolle | halbjährlich |
+| Einträge turnusmäßig prüfen | jährlich |
 
-Within the SimpleAct framework, the inventory should include:
+Die erste Zeile ist die wichtigste und die billigste. Zwanzig Eingaben mit erwarteten Ausgaben, monatlich durchlaufen: die einzige Vorkehrung gegen einen Modellwechsel, die ohne Mitwirkung des Anbieters funktioniert.
 
-- internal AI tools
-- customer-facing AI functionality
-- AI-enabled workflows
-- external AI providers and APIs
-- model and infrastructure dependencies
-- business owner, technical owner, and review owner
-- current status, review cadence, and reassessment triggers
+## Die drei Felder, an denen es hängt
 
-## Minimum Inventory Fields
+| Feld | Ohne es |
+|---|---|
+| **Modell und Version** | ist ein stiller Modellwechsel nicht feststellbar |
+| **Wer prüft die Ausgabe, in welcher Zeit** | ist Art. 14 nicht belegbar |
+| **Berührt die Ausgabe einen Anhang-III-Bereich** | bleibt der Rollenwechsel nach Art. 25 unbemerkt |
 
-Every serious AI inventory should capture at least:
+## Die Kennzahlen, die etwas sagen
 
-- system name
-- use case summary
-- business owner
-- technical owner
-- provider or model dependency
-- intended purpose
-- user or stakeholder impact
-- deployment environment
-- current lifecycle status
-- last review date
+Nicht die Zahl der Einträge. Diese drei:
 
-See [templates/inventory-field-dictionary.md](./templates/inventory-field-dictionary.md) and [templates/ai-system-inventory-template.md](./templates/ai-system-inventory-template.md).
+1. Anteil der Einträge mit **Eigentümer namentlich**
+2. Aus wie vielen **Quellen** gesucht wurde
+3. Zahl der im letzten Monat **tatsächlich geänderten Ausgaben**
 
-## Why It Matters
+Die dritte ist die unbequemste. Fällt sie gegen Null, ist die menschliche Aufsicht formal geworden, ohne dass jemand das entschieden hätte.
 
-This repository explains why AI system inventory is the foundation of the SimpleAct AI Governance Framework. Without inventory, simpleact.de style central registration, rule-based assessment, and exportable compliance records are not operationally possible.
+## Weiter
 
-See [knowledge-base/eu-ai-act/definitions.md](./knowledge-base/eu-ai-act/definitions.md), [knowledge-base/eu-ai-act/inventory-and-governance.md](./knowledge-base/eu-ai-act/inventory-and-governance.md), [main-content.md](./main-content.md), and [checklist.md](./checklist.md).
+[Prüfliste](./checklist.md) · [Die Felder](./knowledge-base/eu-ai-act/inventory-fields.md) · [Vorlagen](./templates/template-overview.md)
