@@ -18,7 +18,7 @@ Die ereignisbezogene ist die wirksame. Der Turnus ist eine Untergrenze, keine Ha
 | Maßnahme | Turnus | Durch |
 |---|---|---|
 | Testsätze durchlaufen lassen | monatlich | Eigentümer oder IT |
-| Änderungsverlauf der Anbieter lesen | laufend | benannte Stelle |
+| Änderungsverlauf der Anbieter lesen | laufend | namentlich zuständige Person |
 | SSO-Anwendungsliste durchsehen | vierteljährlich | IT |
 | Kreditorenliste und Auslagen durchsehen | halbjährlich | Beschaffung |
 | Netzprotokolle aggregiert auswerten | halbjährlich | IT |

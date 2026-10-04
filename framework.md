@@ -27,7 +27,7 @@ Frage 1 ist die schwierige. Die Antwort darauf ist nie „wir haben gefragt".
 | Maßnahme | Turnus |
 |---|---|
 | Testsätze gegen den stillen Modellwechsel | monatlich |
-| Änderungsverlauf der Anbieter lesen | laufend, an eine benannte Stelle |
+| Änderungsverlauf der Anbieter lesen | laufend, an eine namentlich zuständige Person |
 | SSO-Anwendungsliste | vierteljährlich |
 | Kreditoren, Auslagen, Netzprotokolle | halbjährlich |
 | Einträge turnusmäßig prüfen | jährlich |
